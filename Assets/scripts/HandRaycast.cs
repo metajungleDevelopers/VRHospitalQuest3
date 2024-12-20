@@ -53,7 +53,7 @@ public class HandRaycast : MonoBehaviour
         // Realizar el raycast.
         if (Physics.Raycast(rayOrigin, rayDirection, out RaycastHit hit, rayLength, interactableLayer))
         {
-            Debug.Log($"Hit: {hit.collider.name}");
+            //Debug.Log($"Hit: {hit.collider.name}");
 
             // Detectar el pinch para instanciar un objeto en la posición de colisión.
             if (hand.GetFingerIsPinching(OVRHand.HandFinger.Index))
@@ -70,7 +70,7 @@ public class HandRaycast : MonoBehaviour
             // Instanciar el objeto en la posición del impacto con la orientación alineada a la superficie.
             Quaternion rotation = Quaternion.LookRotation(normal); // Orientación basada en la normal de la superficie.
             Instantiate(objectToInstantiate, position, rotation);
-            Debug.Log($"Object instantiated at: {position}");
+            //Debug.Log($"Object instantiated at: {position}");
         }
         else
         {
