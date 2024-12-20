@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 64d1a9a5ffdb34815b4b8ec3cd1997c7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221362
+  packageName: FMETP STREAM 3.0
+  packageVersion: 3.490
+  assetPath: Assets/FMETP_STREAM/FMNetwork/Scripts/LargeFileDecoder.cs
+  uploadId: 665913

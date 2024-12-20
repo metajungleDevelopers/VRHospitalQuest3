@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 9a8112ebf7007407ba81465ecae68e75
+timeCreated: 1566571644
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221362
+  packageName: FMETP STREAM 3.0
+  packageVersion: 3.490
+  assetPath: Assets/FMETP_STREAM/FMCore/Scripts/Mapper/GameViewDecoder.cs
+  uploadId: 665913

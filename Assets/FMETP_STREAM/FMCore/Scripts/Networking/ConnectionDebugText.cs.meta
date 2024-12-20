@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 8a5d17c4d876d49dba5250b543a3d9dc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221362
+  packageName: FMETP STREAM 3.0
+  packageVersion: 3.490
+  assetPath: Assets/FMETP_STREAM/FMCore/Scripts/Networking/ConnectionDebugText.cs
+  uploadId: 665913

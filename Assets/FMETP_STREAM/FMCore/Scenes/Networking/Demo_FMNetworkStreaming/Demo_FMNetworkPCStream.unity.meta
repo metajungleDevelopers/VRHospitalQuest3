@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 600d50b8834cd4020ac9499f5ddaa9b6
+timeCreated: 1566571890
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221362
+  packageName: FMETP STREAM 3.0
+  packageVersion: 3.490
+  assetPath: Assets/FMETP_STREAM/FMCore/Scenes/Networking/Demo_FMNetworkStreaming/Demo_FMNetworkPCStream.unity
+  uploadId: 665913

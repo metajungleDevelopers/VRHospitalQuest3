@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9a31c783de9404cbcaa1f20d84b6520b
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221362
+  packageName: FMETP STREAM 3.0
+  packageVersion: 3.490
+  assetPath: Assets/FMETP_STREAM/FMCore/Scenes/Others/Demo_Gigapixel_Panorama_360Viewer.unity
+  uploadId: 665913

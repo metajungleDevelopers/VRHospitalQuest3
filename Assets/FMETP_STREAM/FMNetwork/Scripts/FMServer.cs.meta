@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: f9364150ba38f41598ca0e28f2c9faff
+timeCreated: 1565608285
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221362
+  packageName: FMETP STREAM 3.0
+  packageVersion: 3.490
+  assetPath: Assets/FMETP_STREAM/FMNetwork/Scripts/FMServer.cs
+  uploadId: 665913

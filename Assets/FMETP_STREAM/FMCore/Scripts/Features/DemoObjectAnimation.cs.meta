@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 7f35eb35aa367466aaa0f960c3b3bd3e
+timeCreated: 1561036444
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221362
+  packageName: FMETP STREAM 3.0
+  packageVersion: 3.490
+  assetPath: Assets/FMETP_STREAM/FMCore/Scripts/Features/DemoObjectAnimation.cs
+  uploadId: 665913

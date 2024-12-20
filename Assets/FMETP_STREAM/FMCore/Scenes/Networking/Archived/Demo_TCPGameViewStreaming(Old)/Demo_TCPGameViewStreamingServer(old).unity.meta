@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 53c275ce58c104a6a80e0f8dc8f648bf
+timeCreated: 1561036338
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221362
+  packageName: FMETP STREAM 3.0
+  packageVersion: 3.490
+  assetPath: Assets/FMETP_STREAM/FMCore/Scenes/Networking/Archived/Demo_TCPGameViewStreaming(Old)/Demo_TCPGameViewStreamingServer(old).unity
+  uploadId: 665913

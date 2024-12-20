@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 26e29a3ae8c3b4327b79d9420d635629
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221362
+  packageName: FMETP STREAM 3.0
+  packageVersion: 3.490
+  assetPath: Assets/FMETP_STREAM/FMCore/Plugins/FMTurboJpeg/Mac/ReadMe_Mac.txt
+  uploadId: 665913

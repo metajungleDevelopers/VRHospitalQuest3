@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 1c67077b4972d477c99a5d93d7ca5ed6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221362
+  packageName: FMETP STREAM 3.0
+  packageVersion: 3.490
+  assetPath: Assets/FMETP_STREAM/FMWebSocket/Scripts/WebSocket/FMWebSocket.cs
+  uploadId: 665913

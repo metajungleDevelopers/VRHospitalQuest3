@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 92e7047966aa741f1b3ee05e6988371a
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221362
+  packageName: FMETP STREAM 3.0
+  packageVersion: 3.490
+  assetPath: Assets/FMETP_STREAM/FMWebSocket/Scenes/Demo_FMWebSocketEcho.unity
+  uploadId: 665913

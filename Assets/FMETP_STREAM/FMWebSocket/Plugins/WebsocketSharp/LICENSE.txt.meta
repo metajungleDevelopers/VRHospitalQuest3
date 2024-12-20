@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 987b3557dd51b46c6bef29810aec25ee
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221362
+  packageName: FMETP STREAM 3.0
+  packageVersion: 3.490
+  assetPath: Assets/FMETP_STREAM/FMWebSocket/Plugins/WebsocketSharp/LICENSE.txt
+  uploadId: 665913

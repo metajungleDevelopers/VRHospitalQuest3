@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 8b88df783758448d8af0afc134884e7d
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 221362
+  packageName: FMETP STREAM 3.0
+  packageVersion: 3.490
+  assetPath: Assets/FMETP_STREAM/FMCore/Resources/Shaders/FMUnlitDoubleSide.shader
+  uploadId: 665913
