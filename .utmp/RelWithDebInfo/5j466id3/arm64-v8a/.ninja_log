@@ -1,0 +1,12 @@
+# ninja log v5
+61	463	7564186489664871	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	a9b478c7ac47882
+465	676	7564186491738715	F:/Metajungle/VRHospitalQuest3/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5j466id3/obj/arm64-v8a/libswappywrapper.so	9b6d02ee6944c27b
+36	1182	7564186496783907	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	59725ffabbb0765d
+29	1202	7564186496980189	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	89cdfeed77ae3912
+8	1207	7564186497025353	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	10591c911a4a5097
+44	1220	7564186497151300	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	b876ecf38af3807f
+53	1314	7564186498094137	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	20df7ceb1410c60f
+14	1350	7564186498524653	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	f4582e365885938c
+21	1564	7564186500658971	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	4a3d845c190718ca
+1	1633	7564186501345737	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	71d0281293f6f4e0
+1633	1760	7564186502620155	F:/Metajungle/VRHospitalQuest3/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5j466id3/obj/arm64-v8a/libgame.so	99be75fbfef6fd6a
