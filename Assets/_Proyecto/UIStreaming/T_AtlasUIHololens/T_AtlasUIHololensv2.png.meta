@@ -1,0 +1,1016 @@
+fileFormatVersion: 2
+guid: 9a901437b9f43ce4990bece8ae35ca02
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4107817438995082939
+    second: T_AtlasUIHololensv2_0
+  - first:
+      213: -2954720666592806744
+    second: T_AtlasUIHololensv2_1
+  - first:
+      213: 8239998746951971410
+    second: T_AtlasUIHololensv2_2
+  - first:
+      213: 7269226501874993312
+    second: T_AtlasUIHololensv2_3
+  - first:
+      213: 2889221550704415681
+    second: T_AtlasUIHololensv2_4
+  - first:
+      213: -1965277685477925539
+    second: T_AtlasUIHololensv2_5
+  - first:
+      213: -7653064875649397566
+    second: T_AtlasUIHololensv2_6
+  - first:
+      213: 2622578991496348888
+    second: T_AtlasUIHololensv2_7
+  - first:
+      213: 6376977636360238361
+    second: T_AtlasUIHololensv2_8
+  - first:
+      213: 1372858996636307462
+    second: T_AtlasUIHololensv2_9
+  - first:
+      213: 8114832754732781263
+    second: T_AtlasUIHololensv2_10
+  - first:
+      213: -1146652043566178151
+    second: T_AtlasUIHololensv2_11
+  - first:
+      213: -9169321572528279914
+    second: T_AtlasUIHololensv2_12
+  - first:
+      213: 732972693647680545
+    second: T_AtlasUIHololensv2_13
+  - first:
+      213: -8199786094079539572
+    second: T_AtlasUIHololensv2_14
+  - first:
+      213: -5063208176134861476
+    second: T_AtlasUIHololensv2_15
+  - first:
+      213: -3349784095823546392
+    second: T_AtlasUIHololensv2_16
+  - first:
+      213: 2644182800318655072
+    second: T_AtlasUIHololensv2_17
+  - first:
+      213: -6490519288243079532
+    second: T_AtlasUIHololensv2_18
+  - first:
+      213: 3116742859825210259
+    second: T_AtlasUIHololensv2_19
+  - first:
+      213: 2707063628653558084
+    second: T_AtlasUIHololensv2_20
+  - first:
+      213: -5157264196179704251
+    second: T_AtlasUIHololensv2_21
+  - first:
+      213: 3266982149663576672
+    second: T_AtlasUIHololensv2_22
+  - first:
+      213: 8588783169649595702
+    second: T_AtlasUIHololensv2_23
+  - first:
+      213: -7093035517545889292
+    second: T_AtlasUIHololensv2_24
+  - first:
+      213: -6277275782007721406
+    second: T_AtlasUIHololensv2_25
+  - first:
+      213: -3084475556061567620
+    second: T_AtlasUIHololensv2_26
+  - first:
+      213: -1319748930210874734
+    second: T_AtlasUIHololensv2_27
+  - first:
+      213: -1068115220379632234
+    second: T_AtlasUIHololensv2_28
+  - first:
+      213: 6271115495547614945
+    second: T_AtlasUIHololensv2_29
+  - first:
+      213: -758520688588489165
+    second: T_AtlasUIHololensv2_30
+  - first:
+      213: -9160692521183117584
+    second: T_AtlasUIHololensv2_31
+  - first:
+      213: 1411512224069687937
+    second: T_AtlasUIHololensv2_32
+  - first:
+      213: -204863217954397293
+    second: T_AtlasUIHololensv2_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 2
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 883
+        width: 474
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5411b8aadc91ef6c0800000000000000
+      internalID: -4107817438995082939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_1
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 892
+        width: 4
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a8fa316539bef6d0800000000000000
+      internalID: -2954720666592806744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_2
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 895
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2527cb5f33b5a5270800000000000000
+      internalID: 8239998746951971410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_3
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 895
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a84d1c4dfa71e460800000000000000
+      internalID: 7269226501874993312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_4
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 895
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c3d32f41b3981820800000000000000
+      internalID: 2889221550704415681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_5
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 895
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d16188b5ee9b4e0800000000000000
+      internalID: -1965277685477925539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_6
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 893
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc06e31b0adac590800000000000000
+      internalID: -7653064875649397566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_7
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 893
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4ca8f92b5456420800000000000000
+      internalID: 2622578991496348888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_8
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 823
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 915bcd3af539f7850800000000000000
+      internalID: 6376977636360238361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_9
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 824
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 600d435dbff5d0310800000000000000
+      internalID: 1372858996636307462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_10
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 823
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce4d8d656dad9070800000000000000
+      internalID: 8114832754732781263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_11
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 824
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9902346aa064610f0800000000000000
+      internalID: -1146652043566178151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_12
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 611
+        width: 226
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e20266c9600c080800000000000000
+      internalID: -9169321572528279914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_13
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 758
+        width: 254
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1246eea08ca0c2a00800000000000000
+      internalID: 732972693647680545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_14
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 752
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c868334edf1843e80800000000000000
+      internalID: -8199786094079539572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_15
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 758
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5dc0a56dfedbb9b0800000000000000
+      internalID: -5063208176134861476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_16
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 753
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e73f2edc1d2381d0800000000000000
+      internalID: -3349784095823546392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_17
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 759
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ae0365f3602b420800000000000000
+      internalID: 2644182800318655072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_18
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 753
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4963378781b0de5a0800000000000000
+      internalID: -6490519288243079532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_19
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 758
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393ed182e15e04b20800000000000000
+      internalID: 3116742859825210259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_20
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 679
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4497642170c619520800000000000000
+      internalID: 2707063628653558084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_21
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 399
+        width: 226
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5464ed5b987bd68b0800000000000000
+      internalID: -5157264196179704251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_22
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 545
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0625d36b4f6a65d20800000000000000
+      internalID: 3266982149663576672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_23
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 535
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63551d799cc713770800000000000000
+      internalID: 8588783169649595702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_24
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 545
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1c27df6c9709d90800000000000000
+      internalID: -7093035517545889292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_25
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 535
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24274484fe2a2e8a0800000000000000
+      internalID: -6277275782007721406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_26
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 545
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c752392f2ddb135d0800000000000000
+      internalID: -3084475556061567620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_27
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 535
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a341e175f4fade0800000000000000
+      internalID: -1319748930210874734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_28
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 535
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d751ebdda4d21f0800000000000000
+      internalID: -1068115220379632234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_29
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 535
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e63091415a770750800000000000000
+      internalID: 6271115495547614945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_30
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 453
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ef5e9d3713975f0800000000000000
+      internalID: -758520688588489165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_31
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 453
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe7d4affaeaed080800000000000000
+      internalID: -9160692521183117584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_32
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 453
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a9bc7a3e2b69310800000000000000
+      internalID: 1411512224069687937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_AtlasUIHololensv2_33
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 453
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393e84a1dfd282df0800000000000000
+      internalID: -204863217954397293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      T_AtlasUIHololensv2_0: -4107817438995082939
+      T_AtlasUIHololensv2_1: -2954720666592806744
+      T_AtlasUIHololensv2_10: 8114832754732781263
+      T_AtlasUIHololensv2_11: -1146652043566178151
+      T_AtlasUIHololensv2_12: -9169321572528279914
+      T_AtlasUIHololensv2_13: 732972693647680545
+      T_AtlasUIHololensv2_14: -8199786094079539572
+      T_AtlasUIHololensv2_15: -5063208176134861476
+      T_AtlasUIHololensv2_16: -3349784095823546392
+      T_AtlasUIHololensv2_17: 2644182800318655072
+      T_AtlasUIHololensv2_18: -6490519288243079532
+      T_AtlasUIHololensv2_19: 3116742859825210259
+      T_AtlasUIHololensv2_2: 8239998746951971410
+      T_AtlasUIHololensv2_20: 2707063628653558084
+      T_AtlasUIHololensv2_21: -5157264196179704251
+      T_AtlasUIHololensv2_22: 3266982149663576672
+      T_AtlasUIHololensv2_23: 8588783169649595702
+      T_AtlasUIHololensv2_24: -7093035517545889292
+      T_AtlasUIHololensv2_25: -6277275782007721406
+      T_AtlasUIHololensv2_26: -3084475556061567620
+      T_AtlasUIHololensv2_27: -1319748930210874734
+      T_AtlasUIHololensv2_28: -1068115220379632234
+      T_AtlasUIHololensv2_29: 6271115495547614945
+      T_AtlasUIHololensv2_3: 7269226501874993312
+      T_AtlasUIHololensv2_30: -758520688588489165
+      T_AtlasUIHololensv2_31: -9160692521183117584
+      T_AtlasUIHololensv2_32: 1411512224069687937
+      T_AtlasUIHololensv2_33: -204863217954397293
+      T_AtlasUIHololensv2_4: 2889221550704415681
+      T_AtlasUIHololensv2_5: -1965277685477925539
+      T_AtlasUIHololensv2_6: -7653064875649397566
+      T_AtlasUIHololensv2_7: 2622578991496348888
+      T_AtlasUIHololensv2_8: 6376977636360238361
+      T_AtlasUIHololensv2_9: 1372858996636307462
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
