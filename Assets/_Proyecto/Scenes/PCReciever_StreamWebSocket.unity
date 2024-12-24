@@ -349,10 +349,10 @@ MonoBehaviour:
   EditorShowConnectionEvents: 0
   AutoInit: 1
   Initialised: 0
-  NetworkType: 0
+  NetworkType: 1
   Settings:
-    IP: http://20.226.20.251
-    port: 3000
+    IP: https://34.27.221.64
+    port: 7777
     sslEnabled: 0
     sslProtocols: 240
     portRequired: 1
