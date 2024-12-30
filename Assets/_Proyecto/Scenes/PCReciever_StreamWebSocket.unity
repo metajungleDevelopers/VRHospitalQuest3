@@ -568,7 +568,7 @@ MonoBehaviour:
   Initialised: 0
   NetworkType: 1
   Settings:
-    IP: https://34.27.221.64
+    IP: 34.176.65.11
     port: 7777
     sslEnabled: 0
     sslProtocols: 240

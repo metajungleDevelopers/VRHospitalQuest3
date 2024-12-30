@@ -20050,7 +20050,7 @@ MonoBehaviour:
   Initialised: 0
   NetworkType: 0
   Settings:
-    IP: https://34.27.221.64
+    IP: 34.176.65.11
     port: 7777
     sslEnabled: 0
     sslProtocols: 240
@@ -23946,7 +23946,7 @@ MonoBehaviour:
   Initialised: 0
   NetworkType: 1
   Settings:
-    IP: 20.226.20.251
+    IP: 34.176.65.11
     port: 3000
     sslEnabled: 0
     sslProtocols: 240
