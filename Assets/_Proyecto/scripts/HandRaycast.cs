@@ -1,80 +1,102 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class HandRaycast : MonoBehaviour
 {
-    [SerializeField]
-    private OVRHand hand; // Referencia al componente OVRHand.
+    public OVRHand rightHand; // Mano derecha para tracking
+    public Transform rightController; // Controlador derecho
+    public LayerMask drawLayerMask; // Capas donde se puede dibujar
 
-    [SerializeField]
-    private float rayLength = 10f; // Longitud del raycast.
+    public Color drawColor = Color.red; // Color del dibujo
+    public float brushSize = 0.1f; // Tamaño del pincel
 
-    [SerializeField]
-    private LayerMask interactableLayer; // Capas con las que el raycast interactuará.
+    private bool isDrawing = false;
 
-    [SerializeField]
-    private Color rayColor = Color.red; // Color del rayo para depuración.
-
-    [SerializeField]
-    private GameObject objectToInstantiate; // Prefab del objeto que se instanciará.
-
-    private LineRenderer lineRenderer; // Línea para visualizar el rayo.
-
-    private void Start()
+    void Update()
     {
-        // Crear un LineRenderer para visualizar el rayo.
-        lineRenderer = gameObject.AddComponent<LineRenderer>();
-        lineRenderer.startWidth = 0.01f;
-        lineRenderer.endWidth = 0.01f;
-        lineRenderer.positionCount = 2;
-        lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
-        lineRenderer.startColor = rayColor;
-        lineRenderer.endColor = rayColor;
-    }
+        // Determinar si usamos Hand Tracking o el controlador
+        bool isHandTracked = rightHand.IsTracked;
+        Vector3 rayOrigin;
+        Vector3 rayDirection;
 
-    private void Update()
-    {
-        // Asegurarse de que la mano está siendo rastreada y que la pose del puntero es válida.
-        if (hand == null || !hand.IsTracked || !hand.IsPointerPoseValid)
+        if (isHandTracked)
         {
-            lineRenderer.enabled = false;
-            return;
-        }
-
-        // Obtener la posición y orientación del rayo desde el OVRHand.
-        Transform pointerPose = hand.PointerPose;
-        Vector3 rayOrigin = pointerPose.position;
-        Vector3 rayDirection = pointerPose.forward;
-
-        // Mostrar el rayo en el mundo.
-        lineRenderer.enabled = true;
-        lineRenderer.SetPosition(0, rayOrigin);
-        lineRenderer.SetPosition(1, rayOrigin + rayDirection * rayLength);
-
-        // Realizar el raycast.
-        if (Physics.Raycast(rayOrigin, rayDirection, out RaycastHit hit, rayLength, interactableLayer))
-        {
-            //Debug.Log($"Hit: {hit.collider.name}");
-
-            // Detectar el pinch para instanciar un objeto en la posición de colisión.
-            if (hand.GetFingerIsPinching(OVRHand.HandFinger.Index))
-            {
-                InstantiateObjectAtHitPoint(hit.point, hit.normal);
-            }
-        }
-    }
-
-    private void InstantiateObjectAtHitPoint(Vector3 position, Vector3 normal)
-    {
-        if (objectToInstantiate != null)
-        {
-            // Instanciar el objeto en la posición del impacto con la orientación alineada a la superficie.
-            Quaternion rotation = Quaternion.LookRotation(normal); // Orientación basada en la normal de la superficie.
-            Instantiate(objectToInstantiate, position, rotation);
-            //Debug.Log($"Object instantiated at: {position}");
+            rayOrigin = rightHand.PointerPose.position;
+            rayDirection = rightHand.PointerPose.forward;
         }
         else
         {
-            Debug.LogWarning("No object assigned to instantiate.");
+            rayOrigin = rightController.position;
+            rayDirection = rightController.forward;
         }
+
+        // Realizar Raycast
+        if (Physics.Raycast(rayOrigin, rayDirection, out RaycastHit hit, Mathf.Infinity, drawLayerMask))
+        {
+            Debug.DrawRay(rayOrigin, rayDirection * hit.distance, Color.green);
+
+            // Detectar si se está haciendo pinch o presionando el trigger
+            if (isHandTracked && rightHand.GetFingerIsPinching(OVRHand.HandFinger.Index))
+            {
+                isDrawing = true;
+            }
+            else if (!isHandTracked && OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) > 0.5f)
+            {
+                isDrawing = true;
+            }
+            else
+            {
+                isDrawing = false;
+            }
+
+            // Dibujar en el Mesh si se está en modo de dibujo
+            if (isDrawing)
+            {
+                DrawOnMesh(hit);
+            }
+        }
+        else
+        {
+            Debug.DrawRay(rayOrigin, rayDirection * 10f, Color.red);
+        }
+    }
+
+    void DrawOnMesh(RaycastHit hit)
+    {
+        MeshCollider meshCollider = hit.collider as MeshCollider;
+        if (meshCollider == null || meshCollider.sharedMesh == null)
+            return;
+
+        Mesh mesh = meshCollider.sharedMesh;
+        Vector3[] vertices = mesh.vertices;
+        Color[] colors = mesh.colors;
+
+        if (colors.Length == 0)
+        {
+            // Si no hay colores definidos en el Mesh, inicializarlos
+            colors = new Color[vertices.Length];
+            for (int i = 0; i < colors.Length; i++)
+            {
+                colors[i] = Color.white; // Color base
+            }
+        }
+
+        // Transformar el punto de impacto a las coordenadas locales del Mesh
+        Vector3 localHitPoint = meshCollider.transform.InverseTransformPoint(hit.point);
+
+        // Modificar los vértices cercanos al punto de impacto
+        for (int i = 0; i < vertices.Length; i++)
+        {
+            float distance = Vector3.Distance(vertices[i], localHitPoint);
+            if (distance < brushSize)
+            {
+                // Cambiar el color del vértice
+                colors[i] = Color.Lerp(colors[i], drawColor, 0.5f);
+            }
+        }
+
+        // Actualizar los colores del Mesh
+        mesh.colors = colors;
     }
 }
