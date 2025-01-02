@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -5,9 +6,9 @@ using TMPro;
 
 public class PCCaptureDevice : MonoBehaviour
 {
-    public TMP_Dropdown dropdown; // Referencia al componente Dropdown
-    public RawImage rawImage; // Referencia al componente RawImage para mostrar la webcam
-    private WebCamTexture webCamTexture; // Variable para WebCamTexture
+    public TMP_Dropdown dropdown;
+    public RawImage rawImage;
+    private WebCamTexture webCamTexture;
 
     void Start()
     {
@@ -20,7 +21,6 @@ public class PCCaptureDevice : MonoBehaviour
         // Crea una lista para las opciones del dropdown
         List<string> options = new List<string>();
 
-        // Añade el nombre de cada dispositivo a la lista de opciones
         foreach (WebCamDevice device in devices)
         {
             options.Add(device.name);
@@ -35,33 +35,40 @@ public class PCCaptureDevice : MonoBehaviour
         // Si hay al menos un dispositivo, inicia la primera cámara
         if (options.Count > 0)
         {
-            webCamTexture = new WebCamTexture(devices[0].name);
-            rawImage.texture = webCamTexture;
-            webCamTexture.Play();
+            StartCoroutine(StartWebCam(devices[0].name));
         }
     }
 
-    // Método que se llama cuando se cambia la opción en el dropdown
     void OnDropdownValueChanged(int index)
     {
-        // Detiene la cámara actual si está reproduciendo
-        if (webCamTexture != null && webCamTexture.isPlaying)
+        WebCamDevice[] devices = WebCamTexture.devices;
+        StartCoroutine(StartWebCam(devices[index].name));
+    }
+
+    private IEnumerator StartWebCam(string deviceName)
+    {
+        if (webCamTexture != null)
         {
+            rawImage.texture = null;
             webCamTexture.Stop();
+            webCamTexture = null;
         }
 
-        // Crea una nueva instancia de WebCamTexture con la cámara seleccionada
-        WebCamDevice[] devices = WebCamTexture.devices;
-        webCamTexture = new WebCamTexture(devices[index].name);
-
-        // Asigna la nueva WebCamTexture al RawImage y la inicia
-        rawImage.texture = webCamTexture;
+        webCamTexture = new WebCamTexture(deviceName, 1280, 720);
         webCamTexture.Play();
+
+        // Espera hasta que la cámara esté lista
+        while (!webCamTexture.isPlaying || webCamTexture.width <= 16)
+        {
+            yield return null;
+        }
+
+        rawImage.texture = webCamTexture;
+        rawImage.material.mainTexture = webCamTexture;
     }
 
     private void OnDestroy()
     {
-        // Detiene la cámara cuando se destruye el objeto
         if (webCamTexture != null && webCamTexture.isPlaying)
         {
             webCamTexture.Stop();
