@@ -26,6 +26,8 @@ public class HololensDrawingHandler : SingletonMonoBehaviourPunCallbacks<Hololen
 
     private int currentSortingOrder = 0;
 
+    public HandRaycast handRaycast;
+
     [Header("Quest Input")]
     [SerializeField] private OVRHand rightHand;
     [SerializeField] private OVRInput.Controller rightController;
@@ -94,7 +96,12 @@ public class HololensDrawingHandler : SingletonMonoBehaviourPunCallbacks<Hololen
             if (pinchStrength > pinchThreshold)
             {
                 isDrawing = true;
-                drawPosition = rightHand.PointerPose.position;
+
+                // Asegúrate de que el raycast detectó algo antes de usar LastHit
+                if (handRaycast.LastHit.collider != null)
+                {
+                    drawPosition = handRaycast.LastHit.point; // Usar el punto de impacto del Raycast
+                }
             }
         }
         // Check for controller trigger
@@ -113,6 +120,7 @@ public class HololensDrawingHandler : SingletonMonoBehaviourPunCallbacks<Hololen
             TerminarTrazo_Quest();
         }
     }
+
 
     private void HandleDrawing(Vector3 position)
     {

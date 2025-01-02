@@ -2407,6 +2407,7 @@ MonoBehaviour:
   paintMeshes: []
   worldPosition: {x: 0, y: 0, z: 0}
   canDraw: 1
+  handRaycast: {fileID: 398291242}
   rightHand: {fileID: 234152896}
   rightController: 2
   pinchThreshold: 0.7
@@ -3725,7 +3726,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &398291242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3738,13 +3739,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7942addff21ce84789463552cddd02e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rightHand: {fileID: 234152896}
-  rightController: {fileID: 1781465405}
-  drawLayerMask:
+  rayLength: 10
+  interactableLayer:
     serializedVersion: 2
     m_Bits: 4294967295
-  drawColor: {r: 1, g: 0, b: 0, a: 1}
-  brushSize: 0.1
+  rightHand: {fileID: 234152896}
+  showDebugRay: 1
 --- !u!4 &398291243
 Transform:
   m_ObjectHideFlags: 0
