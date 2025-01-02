@@ -1,36 +1,63 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Oculus.Interaction;
 
 public class HandRaycast : MonoBehaviour
 {
-    [SerializeField] private float rayLength = 10f;
-    [SerializeField] private LayerMask interactableLayer;
-    [SerializeField] private OVRHand rightHand;
-    [SerializeField] private bool showDebugRay = true;
+    [SerializeField]
+    private OVRHand hand; // Referencia al componente OVRHand.
+
+    [SerializeField]
+    private float rayLength = 10f; // Longitud del raycast.
+
+    [SerializeField]
+    private LayerMask interactableLayer; // Capas con las que el raycast interactuará.
+
+    [SerializeField]
+    private Color rayColor = Color.red; // Color del rayo para depuración.
 
     // Variable pública para almacenar el último RaycastHit
     public RaycastHit LastHit { get; private set; }
 
-    void Update()
+    private LineRenderer lineRenderer; // Línea para visualizar el rayo.
+
+    private void Start()
     {
-        if (rightHand.IsTracked)
+        // Crear un LineRenderer para visualizar el rayo.
+        lineRenderer = gameObject.AddComponent<LineRenderer>();
+        lineRenderer.startWidth = 0.01f;
+        lineRenderer.endWidth = 0.01f;
+        lineRenderer.positionCount = 2;
+        lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
+        lineRenderer.startColor = rayColor;
+        lineRenderer.endColor = rayColor;
+    }
+
+    private void Update()
+    {
+        // Asegurarse de que la mano está siendo rastreada y que la pose del puntero es válida.
+        if (hand == null || !hand.IsTracked || !hand.IsPointerPoseValid)
         {
-            Vector3 handPosition = rightHand.transform.position;
-            Quaternion handRotation = rightHand.transform.rotation;
-            Vector3 rayDirection = handRotation * Vector3.forward;
+            lineRenderer.enabled = false;
+            return;
+        }
 
-            if (Physics.Raycast(handPosition, rayDirection, out RaycastHit hit, rayLength, interactableLayer))
-            {
-                LastHit = hit; // Guardamos el resultado del Raycast
-                Debug.Log($"Raycast hit: {hit.collider.gameObject.name}");
-            }
+        // Obtener la posición y orientación del rayo desde el OVRHand.
+        Transform pointerPose = hand.PointerPose;
+        Vector3 rayOrigin = pointerPose.position;
+        Vector3 rayDirection = pointerPose.forward;
 
-            if (showDebugRay)
-            {
-                Debug.DrawRay(handPosition, rayDirection * rayLength, Color.green);
-            }
+        // Mostrar el rayo en el mundo.
+        lineRenderer.enabled = true;
+        lineRenderer.SetPosition(0, rayOrigin);
+        lineRenderer.SetPosition(1, rayOrigin + rayDirection * rayLength);
+
+        // Realizar el raycast.
+        if (Physics.Raycast(rayOrigin, rayDirection, out RaycastHit hit, rayLength, interactableLayer))
+        {
+            //Debug.Log($"Hit: {hit.collider.name}");
+            LastHit = hit; // Guardamos el resultado del Raycast
+
         }
     }
+
+  
 }
