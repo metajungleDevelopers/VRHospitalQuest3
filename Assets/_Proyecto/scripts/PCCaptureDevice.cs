@@ -54,7 +54,9 @@ public class PCCaptureDevice : MonoBehaviour
             webCamTexture = null;
         }
 
+        // Configura la cámara con 1280x720 y 30 FPS
         webCamTexture = new WebCamTexture(deviceName, 1280, 720);
+        webCamTexture.requestedFPS = 30f;  // Establece los FPS a 30
         webCamTexture.Play();
 
         // Espera hasta que la cámara esté lista
