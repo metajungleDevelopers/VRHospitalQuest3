@@ -3944,43 +3944,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6230610409262547993}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58bfdc4a0e24770409572aff0e0895a5, type: 3}
+  m_Script: {fileID: 11500000, guid: f6c9b04421fd2994c9e8afc7e3934862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pincel:
-    imagenBoton: {fileID: 0}
-    spriteSinPresionar: {fileID: -5123106579709832026, guid: a29c5f24e765f5c4e8db26b106c10ff6, type: 3}
-    spritePresionado: {fileID: 1394130706565519030, guid: a29c5f24e765f5c4e8db26b106c10ff6, type: 3}
-  menuPincel: {fileID: 0}
-  pincelActivado: 0
-  borrar:
-    imagenBoton: {fileID: 0}
-    spriteSinPresionar: {fileID: 9019621443406357202, guid: a29c5f24e765f5c4e8db26b106c10ff6, type: 3}
-    spritePresionado: {fileID: 3551247282784110466, guid: a29c5f24e765f5c4e8db26b106c10ff6, type: 3}
-  formas:
-    imagenBoton: {fileID: 0}
-    spriteSinPresionar: {fileID: 6538919825855851898, guid: a29c5f24e765f5c4e8db26b106c10ff6, type: 3}
-    spritePresionado: {fileID: 2637830219991271086, guid: a29c5f24e765f5c4e8db26b106c10ff6, type: 3}
-  menuFormas: {fileID: 0}
-  circulo:
-    imagenBoton: {fileID: 0}
-    spriteSinPresionar: {fileID: 0}
-    spritePresionado: {fileID: 0}
-  flecha:
-    imagenBoton: {fileID: 0}
-    spriteSinPresionar: {fileID: 0}
-    spritePresionado: {fileID: 0}
-  fichaMedica:
-    imagenBoton: {fileID: 0}
-    spriteSinPresionar: {fileID: -1395186010386728823, guid: a29c5f24e765f5c4e8db26b106c10ff6, type: 3}
-    spritePresionado: {fileID: -6684190822270530500, guid: a29c5f24e765f5c4e8db26b106c10ff6, type: 3}
-  ficha: {fileID: 0}
-  escaner: {fileID: 0}
-  ingresoRut: {fileID: 0}
-  streaming:
-    imagenBoton: {fileID: 0}
-    spriteSinPresionar: {fileID: 0}
-    spritePresionado: {fileID: 0}
+  dropdown: {fileID: 1392111293}
+  rawImage: {fileID: 1817001816}
 --- !u!114 &6230610409262547995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3993,8 +3961,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ecee1cdf86f5f84cae9a36bfd22403e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dropdown: {fileID: 1392111293}
-  rawImage: {fileID: 1817001816}
 --- !u!114 &6230610409262547996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4007,8 +3973,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9907cf0c9ec74d948845ac45bb9b0e98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rawImageCapturadora: {fileID: 1817001816}
-  rawImageCopia: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
