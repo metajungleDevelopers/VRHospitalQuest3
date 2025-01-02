@@ -289,8 +289,6 @@ public class HololensDrawingHandler : SingletonMonoBehaviourPunCallbacks<Hololen
     //Se llama desde el boton de la UI
     public void ActivatePainting()
     {
-        EraserHandler.Instance.canErase = false;
-        //ShapesHandler.Instance.canCreateShape = false;
         canDraw = true; // Desactiva el dibujo si el borrador est? activado
 
         OnDrawingActive.Invoke();
