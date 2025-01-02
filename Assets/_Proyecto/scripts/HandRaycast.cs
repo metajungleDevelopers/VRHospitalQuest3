@@ -11,8 +11,7 @@ public class HandRaycast : MonoBehaviour
     [SerializeField]
     private LayerMask interactableLayer; // Capas con las que el raycast interactuará.
 
-    [SerializeField]
-    private Color rayColor = Color.red; // Color del rayo para depuración.
+    public LineRenderer Line;
 
     // Variable pública para almacenar el último RaycastHit
     public RaycastHit LastHit { get; private set; }
@@ -22,13 +21,10 @@ public class HandRaycast : MonoBehaviour
     private void Start()
     {
         // Crear un LineRenderer para visualizar el rayo.
-        lineRenderer = gameObject.AddComponent<LineRenderer>();
+        lineRenderer = Line;
         lineRenderer.startWidth = 0.01f;
         lineRenderer.endWidth = 0.01f;
         lineRenderer.positionCount = 2;
-        lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
-        lineRenderer.startColor = rayColor;
-        lineRenderer.endColor = rayColor;
     }
 
     private void Update()
