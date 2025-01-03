@@ -3,6 +3,7 @@ using MetaJungle.Utilities;
 using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -14,9 +15,17 @@ public class EraserHandler : SingletonMonoBehaviourPunCallbacks<EraserHandler>
 
     public UnityEvent OnErasingActive;
 
+    [Header("Quest Input")]
+    [SerializeField] private OVRHand rightHand;
+    [SerializeField] private OVRInput.Controller rightController;
+    [SerializeField] private float pinchThreshold = 0.7f;
+    public HandRaycast handRaycast;
+
+
+
     public bool isPc;
 
-    /*private void Update()
+    private void Update()
     {
         if (canErase)
         {
@@ -28,10 +37,15 @@ public class EraserHandler : SingletonMonoBehaviourPunCallbacks<EraserHandler>
 
             if(HololensDrawingHandler.Instance != null)
             {
-                if (HololensPinchDetector.Instance.isClickHeld && !isPc)
+                if (rightHand != null && rightHand.IsTracked)
                 {
-                    // Intentar borrar
-                    TryEraseAtPosition_Hololens(HololensPinchDetector.Instance.currentPointer);
+                    float pinchStrength = rightHand.GetFingerPinchStrength(OVRHand.HandFinger.Index);
+                    if (pinchStrength > pinchThreshold)
+                    {
+                        // Intentar borrar
+                        TryEraseAtPosition_Hololens();
+                    }
+                   
                 }
             }
         }      
@@ -48,7 +62,7 @@ public class EraserHandler : SingletonMonoBehaviourPunCallbacks<EraserHandler>
         List<GameObject> shapesToRemove = new List<GameObject>();
 
         // Buscar trazos dentro del área de borrado
-        GetGameObjectsToRemove(position, ref meshesToRemove, ref shapesToRemove);
+        GetGameObjectsToRemove(position, ref meshesToRemove);
 
         // Enviar RPC solo si hay algo que borrar
         if (meshesToRemove.Count > 0 || shapesToRemove.Count > 0)
@@ -65,9 +79,9 @@ public class EraserHandler : SingletonMonoBehaviourPunCallbacks<EraserHandler>
     void EraseAtPosition_RPC(Vector3 position)
     {
         List<GameObject> meshesToRemove = new List<GameObject>();
-        List<GameObject> shapesToRemove = new List<GameObject>();
+        //List<GameObject> shapesToRemove = new List<GameObject>();
 
-        GetGameObjectsToRemove(position, ref meshesToRemove, ref shapesToRemove);
+        GetGameObjectsToRemove(position, ref meshesToRemove);
 
         // Eliminar los trazos encontrados
         foreach (var meshObject in meshesToRemove)
@@ -79,15 +93,15 @@ public class EraserHandler : SingletonMonoBehaviourPunCallbacks<EraserHandler>
         }
 
         // Eliminar los shapes encontrados
-        foreach (var shapeObject in shapesToRemove)
+        /*foreach (var shapeObject in shapesToRemove)
         {
-            ShapesHandler.Instance.shapeMeshes.Remove(shapeObject);
+            //ShapesHandler.Instance.shapeMeshes.Remove(shapeObject);
             UndoRedoHandler.Instance.redoStack.Push(shapeObject);
             shapeObject.SetActive(false);
-        }
+        }*/
     }
 
-    private void GetGameObjectsToRemove(Vector3 position, ref List<GameObject> meshesToRemove, ref List<GameObject> shapesToRemove)
+    private void GetGameObjectsToRemove(Vector3 position, ref List<GameObject> meshesToRemove)
     {
         if (DrawingHandler.Instance != null)
         {
@@ -127,7 +141,7 @@ public class EraserHandler : SingletonMonoBehaviourPunCallbacks<EraserHandler>
             }
         }
 
-        foreach (var shapeObject in ShapesHandler.Instance.shapeMeshes)
+        /*foreach (var shapeObject in ShapesHandler.Instance.shapeMeshes)
         {
             Mesh mesh = shapeObject.GetComponent<MeshFilter>().mesh;
             Vector3[] vertices = mesh.vertices;
@@ -140,15 +154,15 @@ public class EraserHandler : SingletonMonoBehaviourPunCallbacks<EraserHandler>
                     break;
                 }
             }
-        }
+        }*/
     }
 
     public void ActivateEraser()
     {
         canErase = true;  
-        if (DrawingHandler.Instance != null) DrawingHandler.Instance.canDraw = false; // Desactiva el dibujo si el borrador está activado
-        if (HololensDrawingHandler.Instance != null) HololensDrawingHandler.Instance.canDraw = false;
-        ShapesHandler.Instance.canCreateShape = false;
+        //if (DrawingHandler.Instance != null) DrawingHandler.Instance.canDraw = false; // Desactiva el dibujo si el borrador está activado
+        //if (HololensDrawingHandler.Instance != null) HololensDrawingHandler.Instance.canDraw = false;
+        //ShapesHandler.Instance.canCreateShape = false;
 
         OnErasingActive.Invoke();
     }
@@ -158,39 +172,37 @@ public class EraserHandler : SingletonMonoBehaviourPunCallbacks<EraserHandler>
     /// Envía un RPC solo si hay trazos en el área de borrado.
     /// </summary>
     /// <param name="position">Posición en el mundo donde se intentará borrar</param>
-    private void TryEraseAtPosition_Hololens(IMixedRealityPointer pointPosition)
+    private void TryEraseAtPosition_Hololens()
     {
         List<GameObject> meshesToRemove = new List<GameObject>();
-        List<GameObject> shapesToRemove = new List<GameObject>();
 
-        if (pointPosition != null)
+        // Asegúrate de que el raycast haya detectado un impacto
+        if (handRaycast.LastHit.collider != null)
         {
-            if (pointPosition.Result != null)
-            {
-                if (DrawingHandler.Instance != null) DrawingHandler.Instance.worldPosition = pointPosition.Result.Details.Point;
-                if (HololensDrawingHandler.Instance != null) HololensDrawingHandler.Instance.worldPosition = pointPosition.Result.Details.Point;
+            // Obtener la posición del impacto
+            Vector3 hitPosition = handRaycast.LastHit.point;
 
-                // Buscar trazos dentro del área de borrado
-                if (DrawingHandler.Instance != null) GetGameObjectsToRemove(DrawingHandler.Instance.worldPosition, ref meshesToRemove, ref shapesToRemove);
-                if (HololensDrawingHandler.Instance != null) GetGameObjectsToRemove(HololensDrawingHandler.Instance.worldPosition, ref meshesToRemove, ref shapesToRemove);
+            // Actualizar las posiciones en los handlers
+            if (DrawingHandler.Instance != null)
+                DrawingHandler.Instance.worldPosition = hitPosition;
+            if (HololensDrawingHandler.Instance != null)
+                HololensDrawingHandler.Instance.worldPosition = hitPosition;
 
-                // Enviar RPC solo si hay algo que borrar
-                if (meshesToRemove.Count > 0 || shapesToRemove.Count > 0)
-                {
-                    if (DrawingHandler.Instance != null)
-                        photonView.RPC(nameof(EraseAtPosition_RPC), RpcTarget.AllBuffered, DrawingHandler.Instance.worldPosition);
-                    if (HololensDrawingHandler.Instance != null)
-                        photonView.RPC(nameof(EraseAtPosition_RPC), RpcTarget.AllBuffered, HololensDrawingHandler.Instance.worldPosition);
-                }
-            }
-            else
+            // Buscar trazos dentro del área de borrado
+            if (DrawingHandler.Instance != null)
+                GetGameObjectsToRemove(DrawingHandler.Instance.worldPosition, ref meshesToRemove);
+            if (HololensDrawingHandler.Instance != null)
+                GetGameObjectsToRemove(HololensDrawingHandler.Instance.worldPosition, ref meshesToRemove);
+
+            // Enviar RPC solo si hay algo que borrar
+            if (meshesToRemove.Count > 0)
             {
-                HololensPinchDetector.Instance.isClickHeld = false;
+                if (DrawingHandler.Instance != null)
+                    photonView.RPC(nameof(EraseAtPosition_RPC), RpcTarget.AllBuffered, DrawingHandler.Instance.worldPosition);
+                if (HololensDrawingHandler.Instance != null)
+                    photonView.RPC(nameof(EraseAtPosition_RPC), RpcTarget.AllBuffered, HololensDrawingHandler.Instance.worldPosition);
             }
         }
-        else
-        {
-            HololensPinchDetector.Instance.isClickHeld = false;
-        }
-    }*/
+    }
+
 }

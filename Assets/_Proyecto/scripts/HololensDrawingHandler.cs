@@ -290,7 +290,8 @@ public class HololensDrawingHandler : SingletonMonoBehaviourPunCallbacks<Hololen
     public void ActivatePainting()
     {
         canDraw = true; // Desactiva el dibujo si el borrador est? activado
-
+        EraserHandler.Instance.canErase = false;
+        //canDraw = !canDraw; // Desactiva el dibujo si el borrador est activado
         OnDrawingActive.Invoke();
     }
 

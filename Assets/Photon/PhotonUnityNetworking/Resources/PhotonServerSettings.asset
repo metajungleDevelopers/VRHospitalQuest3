@@ -60,6 +60,7 @@ MonoBehaviour:
   - ApagarDICOM_RPC
   - ApagarFicha_RPC
   - PrenderDICOM_RPC
+  - EraseAtPosition_RPC
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
