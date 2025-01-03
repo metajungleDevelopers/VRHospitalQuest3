@@ -149,7 +149,7 @@ public class HololensDrawingHandler : SingletonMonoBehaviourPunCallbacks<Hololen
             uiHandler.ActivarDesactivarPintar();
             currentlyDrawing = false;
         }*/
-
+        currentlyDrawing = false;
         canDraw = false;
     }
 
@@ -271,7 +271,7 @@ public class HololensDrawingHandler : SingletonMonoBehaviourPunCallbacks<Hololen
             uiHandler.ActivarDesactivarPintar();
             currentlyDrawing = false;
         }*/
-
+        currentlyDrawing = false;
         canDraw = false;
     }
 

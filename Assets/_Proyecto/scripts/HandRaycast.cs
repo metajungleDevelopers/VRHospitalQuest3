@@ -20,8 +20,8 @@ public class HandRaycast : MonoBehaviour
     {
         // Crear un LineRenderer para visualizar el rayo.
         lineRenderer = gameObject.GetComponent<LineRenderer>();
-        lineRenderer.startWidth = 0.01f;
-        lineRenderer.endWidth = 0.01f;
+        //lineRenderer.startWidth = 0.01f;
+        //lineRenderer.endWidth = 0.01f;
         lineRenderer.positionCount = 2;
 
     }
