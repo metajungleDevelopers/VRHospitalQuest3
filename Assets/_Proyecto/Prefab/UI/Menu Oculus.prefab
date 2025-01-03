@@ -464,37 +464,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 0
---- !u!1 &316664430482680241
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3028212752173981101}
-  m_Layer: 0
-  m_Name: UI Menu PC  VR Solutions_3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &3028212752173981101
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 316664430482680241}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 51.99235, y: -1, z: -0.5}
-  m_LocalScale: {x: 1.039847, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1183430757717513982}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &317824883037699395
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,7 +587,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -50, y: 1, z: 0.5}
-  m_LocalScale: {x: 0.96168, y: 1, z: 1}
+  m_LocalScale: {x: 0.443171, y: 0.46083, z: 0.46083}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6879687880610973422}
@@ -637,10 +606,6 @@ Transform:
   - {fileID: 149057337972584040}
   - {fileID: 5503275432663362564}
   - {fileID: 1838314120537911478}
-  - {fileID: 2263738924443530573}
-  - {fileID: 3028212752173981101}
-  - {fileID: 190134793368669608}
-  - {fileID: 3674175068342470018}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &8395809907186780663
@@ -2070,7 +2035,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6116734828252599499}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: HololensDrawingHandler, Assembly-CSharp
+        m_MethodName: ActivatePainting
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1885050386333381504
 GameObject:
   m_ObjectHideFlags: 0
@@ -2903,37 +2880,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4276426622690219163}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2603843616354499321
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2263738924443530573}
-  m_Layer: 0
-  m_Name: UI Menu PC  VR Solutions_4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &2263738924443530573
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2603843616354499321}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 51.99235, y: -1, z: -0.5}
-  m_LocalScale: {x: 1.039847, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1183430757717513982}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2659213737386454597
 GameObject:
@@ -3930,7 +3876,7 @@ Transform:
   m_GameObject: {fileID: 3636820164873545250}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.15, y: 0.16999999, z: 0.000000022351742}
+  m_LocalPosition: {x: 0.21, y: 0.111, z: 0}
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4411,7 +4357,7 @@ Transform:
   m_GameObject: {fileID: 3785087895055607147}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.13000004, z: -0.000000007450581}
+  m_LocalPosition: {x: 0, y: 0.101, z: 0}
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6110,7 +6056,7 @@ Transform:
   m_GameObject: {fileID: 5656479176755464584}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.15, y: 0, z: 0}
+  m_LocalPosition: {x: 0.212, y: 0.059, z: 0}
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6613,7 +6559,7 @@ Transform:
   m_GameObject: {fileID: 5691834887562449347}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.23, y: 0, z: 0}
+  m_LocalPosition: {x: -0.213, y: 0.059, z: -0}
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7431,37 +7377,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!1 &6349138951282558754
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 190134793368669608}
-  m_Layer: 0
-  m_Name: UI Menu PC  VR Solutions_5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &190134793368669608
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6349138951282558754}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 51.99235, y: -1, z: -0.5}
-  m_LocalScale: {x: 1.039847, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1183430757717513982}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6352321721948828740
 GameObject:
   m_ObjectHideFlags: 0
@@ -8190,7 +8105,7 @@ Transform:
   m_GameObject: {fileID: 6896416245343857450}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.16999999, z: -0.000000022351742}
+  m_LocalPosition: {x: 0, y: 0.013, z: 0}
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9607,7 +9522,7 @@ Transform:
   m_GameObject: {fileID: 7686253075949147042}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.15, y: -0.16999999, z: -0.000000022351742}
+  m_LocalPosition: {x: -0.21, y: 0.008, z: -0}
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10030,7 +9945,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7534388488619575273}
   m_HandleRect: {fileID: 6575316204747113099}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -10187,7 +10102,7 @@ Transform:
   m_GameObject: {fileID: 8164765935809061354}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.23, y: 0.13000004, z: -0.000000007450581}
+  m_LocalPosition: {x: -0.211, y: 0.112, z: -0}
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10709,7 +10624,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6794747882278127325}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: EraserHandler, Assembly-CSharp
+        m_MethodName: ActivateEraser
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8465975021679219382
 GameObject:
   m_ObjectHideFlags: 0
@@ -10801,7 +10728,7 @@ Transform:
   m_GameObject: {fileID: 8472082882702042631}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.15, y: -0.16999999, z: -0.000000022351742}
+  m_LocalPosition: {x: 0.214, y: 0.008, z: 0}
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12511,37 +12438,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &9102067581932781031
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3674175068342470018}
-  m_Layer: 0
-  m_Name: UI Menu PC  VR Solutions_11 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &3674175068342470018
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9102067581932781031}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 51.99235, y: -1, z: -0.5}
-  m_LocalScale: {x: 1.039847, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1183430757717513982}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9137341317580750020
 GameObject:
   m_ObjectHideFlags: 0
@@ -13222,11 +13118,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 31bae555d91c37c47a1181868917e61d, type: 2}
     - target: {fileID: -4932099093455679918, guid: d373038051eb6dd4e914d28686e13545, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.061666675
+      value: -0.061666667
       objectReference: {fileID: 0}
     - target: {fileID: -4932099093455679918, guid: d373038051eb6dd4e914d28686e13545, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.028333332
+      value: 0.028333358
       objectReference: {fileID: 0}
     - target: {fileID: -4932099093455679918, guid: d373038051eb6dd4e914d28686e13545, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13258,27 +13154,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1980960758582919647, guid: d373038051eb6dd4e914d28686e13545, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.061666675
+      value: 0.061666667
       objectReference: {fileID: 0}
     - target: {fileID: 1980960758582919647, guid: d373038051eb6dd4e914d28686e13545, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.010400005
+      value: 0.010399986
       objectReference: {fileID: 0}
     - target: {fileID: 1980960758582919647, guid: d373038051eb6dd4e914d28686e13545, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.9406965e-10
+      value: 0.0000000062584875
       objectReference: {fileID: 0}
     - target: {fileID: 2628600266646532890, guid: d373038051eb6dd4e914d28686e13545, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.061666675
+      value: -0.061666667
       objectReference: {fileID: 0}
     - target: {fileID: 2628600266646532890, guid: d373038051eb6dd4e914d28686e13545, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.010400005
+      value: 0.010399986
       objectReference: {fileID: 0}
     - target: {fileID: 2628600266646532890, guid: d373038051eb6dd4e914d28686e13545, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.9406965e-10
+      value: 0.0000000062584875
       objectReference: {fileID: 0}
     - target: {fileID: 5682472876988596086, guid: d373038051eb6dd4e914d28686e13545, type: 3}
       propertyPath: m_Layer
@@ -13286,11 +13182,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6513762932657452581, guid: d373038051eb6dd4e914d28686e13545, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.061666675
+      value: 0.061666667
       objectReference: {fileID: 0}
     - target: {fileID: 6513762932657452581, guid: d373038051eb6dd4e914d28686e13545, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.028333332
+      value: 0.028333358
       objectReference: {fileID: 0}
     - target: {fileID: 6513762932657452581, guid: d373038051eb6dd4e914d28686e13545, type: 3}
       propertyPath: m_LocalPosition.z

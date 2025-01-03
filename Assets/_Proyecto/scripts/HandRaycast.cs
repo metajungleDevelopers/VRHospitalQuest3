@@ -20,10 +20,10 @@ public class HandRaycast : MonoBehaviour
     {
         // Crear un LineRenderer para visualizar el rayo.
         lineRenderer = gameObject.GetComponent<LineRenderer>();
-        //lineRenderer.startWidth = 0.01f;
-        //lineRenderer.endWidth = 0.01f;
         lineRenderer.positionCount = 2;
-
+        lineRenderer.startWidth = 0.01f;
+        lineRenderer.endWidth = 0.01f;
+        lineRenderer.enabled = false; // Inicialmente desactivado
     }
 
     private void Update()
@@ -40,19 +40,20 @@ public class HandRaycast : MonoBehaviour
         Vector3 rayOrigin = pointerPose.position;
         Vector3 rayDirection = pointerPose.forward;
 
-        // Mostrar el rayo en el mundo.
-        lineRenderer.enabled = true;
-        lineRenderer.SetPosition(0, rayOrigin);
-        lineRenderer.SetPosition(1, rayOrigin + rayDirection * rayLength);
-
         // Realizar el raycast.
         if (Physics.Raycast(rayOrigin, rayDirection, out RaycastHit hit, rayLength, interactableLayer))
         {
-            //Debug.Log($"Hit: {hit.collider.name}");
-            LastHit = hit; // Guardamos el resultado del Raycast
+            // Habilitar el LineRenderer y mostrarlo desde el origen del rayo hasta el punto de impacto.
+            lineRenderer.enabled = true;
+            lineRenderer.SetPosition(0, rayOrigin);
+            lineRenderer.SetPosition(1, hit.point);
 
+            LastHit = hit; // Guardamos el resultado del Raycast
+        }
+        else
+        {
+            // Deshabilitar el LineRenderer si no hay impacto.
+            lineRenderer.enabled = false;
         }
     }
-
-  
 }
