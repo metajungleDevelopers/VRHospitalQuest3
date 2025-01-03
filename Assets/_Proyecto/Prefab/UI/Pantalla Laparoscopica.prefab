@@ -1253,9 +1253,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483969647146485402}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.17364816, y: -0, z: -0, w: 0.9848078}
+  m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
   m_LocalPosition: {x: -0.4238, y: 1, z: 0.5}
-  m_LocalScale: {x: 0.96168, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8784199911659893428}
@@ -1356,17 +1356,17 @@ MonoBehaviour:
         Max: 0
   _rotationConstraints:
     XAxis:
-      ConstrainAxis: 0
+      ConstrainAxis: 1
       AxisRange:
-        Min: 0
-        Max: 0
+        Min: 30
+        Max: 30
     YAxis:
       ConstrainAxis: 0
       AxisRange:
         Min: 0
         Max: 0
     ZAxis:
-      ConstrainAxis: 0
+      ConstrainAxis: 1
       AxisRange:
         Min: 0
         Max: 0
@@ -1376,12 +1376,12 @@ MonoBehaviour:
       ConstrainAxis: 1
       AxisRange:
         Min: 0.7
-        Max: Infinity
+        Max: 2
     YAxis:
       ConstrainAxis: 1
       AxisRange:
         Min: 0.7
-        Max: Infinity
+        Max: 2
     ZAxis:
       ConstrainAxis: 0
       AxisRange:
@@ -1718,8 +1718,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.4, y: 0.2, z: 0.001}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.4, y: 0.23, z: 0.001}
+  m_Center: {x: 0, y: 0.014, z: 0}
 --- !u!114 &4262512883030626775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2522,7 +2522,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00012207031}
+  m_AnchoredPosition: {x: 0, y: 0.000061035156}
   m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &3473421470199758706
@@ -8172,7 +8172,7 @@ Transform:
   m_GameObject: {fileID: 5842929351343364816}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.0155, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12247,11 +12247,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4932099093455679918, guid: d373038051eb6dd4e914d28686e13545, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.035
+      value: 0.034999996
       objectReference: {fileID: 0}
     - target: {fileID: -4932099093455679918, guid: d373038051eb6dd4e914d28686e13545, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0000000047683715
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2653669481416459777, guid: d373038051eb6dd4e914d28686e13545, type: 3}
       propertyPath: m_Layer
@@ -12283,7 +12283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1980960758582919647, guid: d373038051eb6dd4e914d28686e13545, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.027400002
+      value: -0.02740001
       objectReference: {fileID: 0}
     - target: {fileID: 1980960758582919647, guid: d373038051eb6dd4e914d28686e13545, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12295,7 +12295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2628600266646532890, guid: d373038051eb6dd4e914d28686e13545, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.027400002
+      value: -0.02740001
       objectReference: {fileID: 0}
     - target: {fileID: 2628600266646532890, guid: d373038051eb6dd4e914d28686e13545, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12311,11 +12311,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6513762932657452581, guid: d373038051eb6dd4e914d28686e13545, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.035
+      value: 0.034999996
       objectReference: {fileID: 0}
     - target: {fileID: 6513762932657452581, guid: d373038051eb6dd4e914d28686e13545, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0000000047683715
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7036213049465896255, guid: d373038051eb6dd4e914d28686e13545, type: 3}
       propertyPath: m_Layer
