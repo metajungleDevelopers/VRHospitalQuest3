@@ -1785,7 +1785,7 @@ MonoBehaviour:
   rightHand: {fileID: 234152896}
   rightController: 2
   pinchThreshold: 0.7
-  lineThickness: 0.0045
+  lineThickness: 0.0025
   minDistanceToDraw: 0.005
   drawingDepth: 2
   paintMaterials: []
@@ -1836,7 +1836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canErase: 0
-  eraseRadius: 0.1
+  eraseRadius: 0.005
   OnErasingActive:
     m_PersistentCalls:
       m_Calls: []
@@ -2888,7 +2888,7 @@ MonoBehaviour:
   rayLength: 5
   interactableLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 80
 --- !u!4 &398291243
 Transform:
   m_ObjectHideFlags: 0
